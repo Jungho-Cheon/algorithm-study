@@ -55,7 +55,7 @@ int main()
 
     int ans = 0;
     int ans_2 = 0;
-    for (int tc = 1; tc <= 10; tc++)
+    for (int tc = 1; tc <= 10; tc++, ans = 0, ans_2 = 0)
     {
         int n;
         cin >> n;
@@ -87,8 +87,6 @@ int main()
         ans = (ans > ans_2) ? ans : ans_2;
 
         cout << "#" << tc << " " << ans << endl;
-        ans = 0;
-        ans_2 = 0;
     }
 
     return 0;
