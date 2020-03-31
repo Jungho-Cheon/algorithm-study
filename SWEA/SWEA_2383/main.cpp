@@ -86,6 +86,10 @@ void simulation()
     int p1_idx = 0, p2_idx = 0;
     while (Q1.empty() == 0 || Q2.empty() == 0 || p1_idx < p1_dist.size() || p2_idx < p2_dist.size())
     {
+        // 최적화(1) : 최솟값을 구하는 경우이기 때문에 현재 시간이 ans보다 커질경우 더 이상 계산하지 않는다.
+        if (ans + 1 < time)
+            return;
+
         // Q의 첫번째 값과 현재 진행시간을 비교하여 같은 값을 갖는 사람들을 완료(pop)시킨다.
         while (1)
         {
