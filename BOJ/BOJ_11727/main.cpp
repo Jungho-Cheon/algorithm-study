@@ -1,3 +1,5 @@
+// https://www.acmicpc.net/problem/11727
+
 // 점화식
 // DP[0] = 1, DP[1] = 3
 // DP[i] = DP[i-1] + (DP[i-2] * 2) (i > 2)
