@@ -4,7 +4,7 @@
 #define endl "\n"
 using namespace std;
 
-int N, M, x, y, K, bottom;
+int N, M, x, y, K;
 int board[20][20];
 queue<int> orders;
 int dice[7];
