@@ -5,8 +5,6 @@
 // 부분합의 크기를 구하기 위해 누적합을 구한다.
 // 만약 i ~ j의 부분합을 구하기 위해서는 S[i + j] - S[i - 1]을 구하면 된다.
 
-//
-
 #include <iostream>
 #include <algorithm>
 
