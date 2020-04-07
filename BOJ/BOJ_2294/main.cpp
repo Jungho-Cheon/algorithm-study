@@ -32,11 +32,6 @@ void solution()
 int main()
 {
     cin >> N >> K;
-    if (N < 1 || 100 < N || K < 1 || MAX <= K)
-    {
-        cout << -1 << endl;
-        return 0;
-    }
 
     for (int i = 0; i < N; i++)
     {
